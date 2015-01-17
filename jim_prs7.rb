@@ -18,8 +18,10 @@ loop do
   layer_choice = gets.chomp.downcase
   end until CHOICES.keys.include?(player_choice)
   computer_choice = CHOICES.keys.sample
-
-  if player_choice == computer_choice  
+  
+  if player_choice != ("p" || "r" || "s")
+    puts "You entered an invalid entry. Please try again"
+  elsif player_choice == computer_choice  
     puts "It's a tie!"
   elsif player_choice == "p" && computer_choice == "r" || player_choice == "r" && computer_choice == "s" || player_choice == "s" && computer_choice == "p"
     display_winning_message(player_choice)
