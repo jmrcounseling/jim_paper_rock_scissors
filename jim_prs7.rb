@@ -4,12 +4,12 @@ puts "Welcome to Paper, Rock, Scissors!"
 
 def display_winning_message(winning_choice)
   case winning_choice
-    when "p"
-      puts "Paper wraps Rock!"
-    when "r"
-      puts "Rock smashes Scissors!"
-    when "s"
-      puts "Scissors cuts Paper!"
+  when "p"
+   puts "Paper wraps Rock!"
+  when "r"
+   puts "Rock smashes Scissors!"
+  when "s"
+   puts "Scissors cuts Paper!"
   end
 end
 loop do
