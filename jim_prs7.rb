@@ -15,7 +15,7 @@ end
 loop do
  begin
   puts "Choose one (p, r, s):"
-  layer_choice = gets.chomp.downcase
+  player_choice = gets.chomp.downcase
   end until CHOICES.keys.include?(player_choice)
   computer_choice = CHOICES.keys.sample
   
