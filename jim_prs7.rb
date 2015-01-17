@@ -3,7 +3,7 @@ CHOICES = {"p" => "Paper", "r" => "Rock", "s" => "Scissors"}
 puts "Welcome to Paper, Rock, Scissors!"
 
 def display_winning_message(winning_choice)
-  case
+  case winning_choice
     when "p"
     puts "Paper wraps Rock!"
     when "r"
