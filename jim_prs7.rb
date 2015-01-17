@@ -20,7 +20,7 @@ loop do
   computer_choice = CHOICES.keys.sample
   
   if player_choice != ("p" || "r" || "s")
-    puts "You entered an invalid entry. Please try again"
+    puts "You entered an invalid reponse. Please try again"
   elsif player_choice == computer_choice  
     puts "It's a tie!"
   elsif player_choice == "p" && computer_choice == "r" || player_choice == "r" && computer_choice == "s" || player_choice == "s" && computer_choice == "p"
