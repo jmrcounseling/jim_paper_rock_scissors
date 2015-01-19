@@ -31,3 +31,4 @@ loop do
   puts "Play again (y/n)"
   break if gets.chomp.downcase != "y"
 end
+puts "Good-bye for now!"
